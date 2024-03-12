@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+
+@keyframes slide-right {
+  from {
+      left: -100%; /* Adjust initial position off the screen */
+  }
+  to {
+      left: 0; /* Adjust final position on the screen */
+  }
+}
+
+.slide-right {
+  animation: slide-right 2s ease-in-out forwards;
+}
